@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculator</title>
+  <meta name="description" content="Simple Calculator With Dark Mode." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="img/calculator.ico">
+  <link rel="stylesheet" href="styles/dark.css" id="theme" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="header-container">
+        <h1 id="toast">Калькулятор</h1>
+        <div class="top-buttons">
+          <a href="#" target="_blank">
+            <img src="img/GitHubLight.svg" alt="Sun Icon" height="22.5" width="22.5" id="github-icon">
+          </a>
+          <button type="button" id="changeTheme" class="theme-button">
+            <img src="img/SunIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon">
+          </button>
+        </div>
+      </div>
+      <div id="container_buttons">
+        <div class="row">
+          <input type="text" name="result" placeholder="0" readonly value="" id="result"/>
+          <input type="button" value="AC" id="clear-button"/>
+ 
+          <input type="button" value="1" id="Number"/>
+          <input type="button" value="2" id="Number"/>
+          <input type="button" value="3" id="Number"/>
+          <input type="button" value="+" id="Character"/>
+
+          <input type="button" value="4" id="Number"/>
+          <input type="button" value="5" id="Number"/>
+          <input type="button" value="6" id="Number"/>
+          <input type="button" value="-" id="Character"/>
+
+          <input type="button" value="7" id="Number"/>
+          <input type="button" value="8" id="Number"/>
+          <input type="button" value="9" id="Number"/>
+          <input type="button" value="x" id="Character"/>
+
+          <input type="button" value="/" id="Character"/>
+          <input type="button" value="0" id="Number"/>
+          <input type="button" value="." id="point"/>
+          <input type="button" value="=" id="="/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>
